@@ -22,10 +22,16 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hola mundo"),
+          title: Text("Salto Ángel Venezuela"),
+          leading: Icon(Icons.arrow_back),
         ),
-        body: Center(
-          child: Text("Hola Mundo "),
+        body: Stack(
+          children: <Widget>[
+            Image.network("http://www.radioespecial.com.ve/wp-content/uploads/2017/06/salto-angel.jpg",
+            fit: BoxFit.cover,
+            height: double.maxFinite,
+            ),
+          ],
         ),
         
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
