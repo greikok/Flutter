@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,14 +26,8 @@ class MyApp extends StatelessWidget {
           title: Text("Salto Ángel Venezuela"),
           leading: Icon(Icons.arrow_back),
         ),
-        body: Stack(
-          children: <Widget>[
-            Image.network("http://www.radioespecial.com.ve/wp-content/uploads/2017/06/salto-angel.jpg",
-            fit: BoxFit.cover,
-            height: double.maxFinite,
-            ),
-          ],
-        ),
+        body: new DescriptionPlace(),
+              
         
       ) //MyHomePage(title: 'Flutter Demo Home Page'),
     );
